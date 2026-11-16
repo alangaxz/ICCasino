@@ -1,0 +1,136 @@
+#include <iostream>
+using namespace std;
+
+double Poker();
+double Bacara();
+double Ruleta();
+double BlackJack();
+double Tragamonedas();
+
+void menu1() {
+        cout<<"=================================================================================="<<endl;
+        cout<<"=================================================================================="<<endl;
+        cout<<"=======                ========              ===========                =========="<<endl;
+        cout<<"============     ============     =====================     ======================"<<endl;
+        cout<<"============     ===========    ======================     ======================="<<endl;
+        cout<<"============     ===========    ======================     ======================="<<endl;
+        cout<<"============     ===========    ======================     ======asino============"<<endl;
+        cout<<"============     ===========    ======================     ======================="<<endl;
+        cout<<"============     ===========    ======================     ======================="<<endl;
+        cout<<"============     ============     =====================     ======================"<<endl;
+        cout<<"=======                 ======               ===========                =========="<<endl;
+        cout<<"=================================================================================="<<endl;
+        cout<<"=================================================================================="<<endl;
+        cout<<endl;
+        cout<<endl;
+    int p;
+    do {
+        cout<<"1. Jugar" << endl;
+        cout<<"2. Reglas" << endl;
+        cout<<"3. Salir" << endl;
+        cin>> p;
+
+        switch(p){
+            case 1:
+                {
+                int a;
+                cout<< "Juegos que tenemos dentro del ICCasino" << endl;
+                cout<< "1. Poker"<< endl;
+                cout<< "2. Bacara"<< endl;
+                cout<< "3. Ruleta"<< endl;
+                cout<< "4. BlackJack"<< endl;
+                cout<< "5. Tragamonedas"<< endl;
+                cout<< "6. Salir"<< endl;
+                cout<< "Elige un juego: ";
+                cin>> a;
+
+                int resultado = 0;
+
+                switch(a) {
+                    case 1:
+                        resultado = Poker();
+                        break;
+                    case 2:
+                        resultado= Bacara();
+                        break;
+                    case 3:
+                        resultado = Ruleta();
+                        break;
+                    case 4:
+                        resultado = BlackJack();
+                        break;
+                    case 5:
+                        resultado = Tragamonedas();
+                        break;
+                    case 6:
+                        cout<<"Regresae"<< endl;
+                        break;
+                    default:
+                        cout<<"error"<<endl;
+                }
+                break;
+            }
+            case 2:
+                {
+                int b;
+                cout << "Reglas de los juegos" << endl;
+                cout << "1. Poker" << endl;
+                cout << "2. Bacara" << endl;
+                cout << "3. Ruleta" << endl;
+                cout << "4. BlackJack" << endl;
+                cout << "5. Tragamonedas" << endl;
+                cout << "6. Salir" << endl;
+                cin >> b;
+
+                //Aqui van a ir las reglas
+                switch(b) {
+                    case 1:
+                        break;
+                    case 2:
+                        break;
+                    case 3:
+                        break;
+                    case 4:
+                        break;
+                    case 5:
+                        break;
+                    case 6:
+                        cout<<"Regresar"<< endl;
+                        break;
+                    default:
+                        cout<<"error"<<endl;
+                }
+                break;
+            }
+            case 3:
+                cout<< "Lo esperamos pronto" << endl;
+                break;
+            default:
+                cout<<"error" << endl;
+        }
+    }while (p!= 3);
+}
+
+//Aqui van los juegos
+    double Poker(){
+    };
+
+    double Bacara(){
+    };
+
+    double Tragamonedas(){
+    };
+
+    double BlackJack(){
+    };
+
+    double Ruleta(){
+    };
+
+int main() {
+    menu1();
+
+    return 0;
+}
+
+
